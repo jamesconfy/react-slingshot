@@ -22,9 +22,9 @@ jobs:
       - checkout
       - run: npm audit
       - run:
-          - name: Trying to bypass
-          - command: npm audit fix
-          - when: on_fail
+          name: Trying to bypass
+          command: npm audit fix
+          when: on_fail
 
 workflows:
   sample:
